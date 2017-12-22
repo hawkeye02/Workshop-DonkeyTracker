@@ -67,7 +67,7 @@ Back in the Dashboard you will see that the warnings for IAM users and groups ha
 
 ![16](./images/16.jpg)
 
-Set the rools as you see fit. Here you see a minimum password length of 6 characters, requirements for upper and lower case characters, numbers as well as alphanumeric characters and you also allow the users to change their passwords. Then cick on **Apply password policy**.
+Set the password policy as you see fit. Here you see a minimum password length of 6 characters, requirements for upper and lower case characters, numbers as well as alphanumeric characters and you also allow the users to change their passwords. Then cick on **Apply password policy**.
 
 ![17](./images/17.jpg)
 
@@ -79,7 +79,7 @@ For the root user you have already enabled MFA but you haven't done the same yet
 
 ![19](./images/19.jpg)
 
-Select your user and navigate to the tab **Security credentials** the click the pencil next to **Assigned MFA device** which currently shows **No**.
+Select your user and navigate to the tab **Security credentials**, then click the pencil next to **Assigned MFA device** which currently shows **No**.
 
 ![20](./images/20.jpg)
 
@@ -95,12 +95,12 @@ Scen the QR Code in your virtual MFA device and enter 2 subsequent authenticatio
 
 ![23](./images/23.jpg)
 
-Back in the screen for the configuration of security credentials for your IAM users scroll down and click on create **Create access key**.
+Back in the screen for the configuration of security credentials for your IAM users scroll down and click on create **Create access key**. Thi is the key you will require for CLI and SDK access to your AWS account.
 
 ![24](./images/24.jpg)
 
-This is the only time you will see the **secret access key** in the concole. You can delete it and create a new one but once yu leave this screen you can never again rerieve the key from the console. So, copy the secret access key and store it somewhere save or simply download the credentials as .csv file. 
+This is the only time you will see the **secret access key** in the concole. You can delete it and create a new one but once yu leave this screen you can never again retrieve the key from the console. So, copy the secret access key and store it somewhere save or simply download the credentials as .csv file. 
 
 ![25](./images/25.jpg)
 
-This concludes the initial configuration of the Identity and Access Management for you new account and your all set for the next steps.
+This concludes the initial configuration of the Identity and Access Management for you new account and you're all set for the next steps.
