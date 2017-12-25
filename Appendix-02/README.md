@@ -3,6 +3,7 @@
 Abbreviation | Explanation
 -------------|-------------
 API | Application Programming Interface
+ARN | Amazon Resource Name
 AWS | Amazon Web Services
 CLI | Command Line Interface
 CSV | Comma Separated Value

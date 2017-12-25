@@ -1,4 +1,4 @@
-# Step 1: Storing Data in DynamoDB
+# Step 1: Persisting Data in DynamoDB Table
 
 Log in to the **[AWS Console](https://console.aws.amazon.com)** and navigate to **DynamoDB**. In the top right pick a region that offers all the services we need for this workshop, i.e. **DynamoDB**, **Lambda**, **API Gateway** and **S3**. Oregon, aka us-west-2, would be a good choice. For an overview which service is available in what region check out [this page](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/).
 
