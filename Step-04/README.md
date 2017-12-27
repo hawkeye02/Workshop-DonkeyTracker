@@ -259,5 +259,19 @@ function toggleTracking() {
 }
 ```
 
-Once you saved your changes deploy your application to the simulator and start the plugin. You should see the latitude and longitude change in the user interface.
+Once you saved your changes deploy your application to the simulator and start the plugin. You should see the latitude and longitude change in the user interface and the debug messages in the **Debug Console** of Visual Studio Code.
+
+![04](./images/04.jpg)
+
+By default the simulator returns one stationary location but you can change the behavior in the **Debug** => **Location** menu of the simulator. In the example the simulation changes to a **Freeway Drive**.
+
+![05](./images/05.jpg)
+
+Verify that the data has indeed been written to your DynamoDB table.
+
+![06](./images/06.jpg)
+
+## Adding a Map
+
+[coming soon]
 
