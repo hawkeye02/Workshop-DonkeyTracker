@@ -11,9 +11,13 @@ CSV | Comma Separated Value
 DDoS | Distributed Denial of Service
 HTTP | Hypertext Transfer Protocol
 IAM	| Identity and Access Management
+IDE | Integrated Development Environment
 JSON | JavaScript Object Notation
 KB | Kilobyte
+LTS | Long Term Support
 MFA	| Multi-Factor Authentication
+NPM | Node Package Manager
+NVM | Node Version Manager
 PIP | Pip Installs Packages
 QR Code	| Quick Response Code
 RPS | Requests Per Second
