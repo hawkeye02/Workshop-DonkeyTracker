@@ -12,3 +12,4 @@
 * [NVM](https://github.com/creationix/nvm)
 * [Apache Cordova](https://cordova.apache.org)
 * [CocoaPods](https://cocoapods.org/)
+* [Cordova Background Geolocation](https://github.com/transistorsoft/cordova-background-geolocation-lt) from Transistor Software

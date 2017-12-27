@@ -52,5 +52,18 @@
       <key>NSAllowsArbitraryLoads</key>
       <true/>
     </dict>
+    <key>UIBackgroundModes</key>
+    <array>
+      <string>fetch</string>
+      <string>location</string>
+    </array>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>[CHANGEME] Always use is required for constant background location-tracking</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Background location-tracking is required</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>[CHANGEME] Background location-tracking is required</string>
+    <key>NSMotionUsageDescription</key>
+    <string>[CHANGEME] Using the accelerometer increases battery-efficiency by intelligently toggling location-tracking only when the device is detected to be moving</string>
   </dict>
 </plist>

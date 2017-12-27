@@ -1,46 +1,108 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
+var bgGeo;
+var tracking = false;
+
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
 
     // deviceready Event Handler
-    //
-    // Bind any cordova events here. Common events are:
-    // 'pause', 'resume', etc.
-    onDeviceReady: function() {
-        this.receivedEvent('deviceready');
-    },
+    onDeviceReady: function () {
+        // Get a reference to the plugin.
+        bgGeo = window.BackgroundGeolocation;
 
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
+        //This callback will be executed every time a geolocation is recorded in the background.
+        var callbackFn = function (location) {
+            var coords = location.coords;
+            var lat = coords.latitude;
+            document.getElementById('lblLat').innerHTML = coords.latitude;
+            var lng = coords.longitude;
+            document.getElementById('lblLon').innerHTML = coords.longitude;
+            console.log('Location: ', JSON.stringify(location));
+        };
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+        // This callback will be executed if a location-error occurs.  Eg: this will be called if user disables location-services.
+        var failureFn = function (errorCode) {
+            console.warn('BackgroundGeoLocation error: ', errorCode);
+        }
 
-        console.log('Received Event: ' + id);
+        // Listen to location events & errors.
+        bgGeo.on('location', callbackFn, failureFn);
+
+        // Fired whenever state changes from moving->stationary or vice-versa.
+        bgGeo.on('motionchange', function (isMoving) {
+            console.log('onMotionChange: ', isMoving);
+        });
+
+        // Fired whenever a geofence transition occurs.
+        bgGeo.on('geofence', function (geofence) {
+            console.log('onGeofence: ', geofence.identifier, geofence.location);
+        });
+
+        // Fired whenever an HTTP response is received from your server.
+        bgGeo.on('http', function (response) {
+            console.log('http success: ', response.responseText);
+        }, function (response) {
+            console.log('http failure: ', response.status);
+        });
+
+        bgGeo.configure({
+            // Geolocation config
+            desiredAccuracy: 0,
+            distanceFilter: 10,
+            stationaryRadius: 25,
+            // Activity Recognition config
+            activityRecognitionInterval: 10000,
+            stopTimeout: 5,
+            // Application config
+            debug: false, // Debug sounds & notifications.
+            stopOnTerminate: false,
+            startOnBoot: false,
+            // HTTP config
+            url: "https://xsbiifi8w0.execute-api.us-west-2.amazonaws.com/prod",
+            method: "POST",
+            autoSync: true,
+            maxDaysToPersist: 3,
+            headers: {
+                "x-api-key": "jUtQnpQCfFzhCHWJHCr843T0bEmitPl3DTjpVn4f"
+            },
+            params: {
+                device: {
+                    platform: device.platform,
+                    version: device.version,
+                    uuid: device.uuid,
+                    cordova: device.cordova,
+                    model: device.model,
+                    manufacturer: device.manufacturer
+                }
+            },
+            // iOS-specific
+            activityType: 'other'
+        }, function (state) {
+            // This callback is executed when the plugin is ready to use.
+            console.log("BackgroundGeolocation ready: ", state);
+            if (!state.enabled) {
+                document.getElementById('lblStatus').innerHTML = 'Plugin Ready';
+                //bgGeo.start();
+            }
+        }, function (error) {
+            console.log("Background Geolocation failed to configure:" + error);
+        });
     }
 };
 
 app.initialize();
+
+function toggleTracking() {
+    if (tracking == false) {
+        tracking = true;
+        bgGeo.start();
+        document.getElementById('lblStatus').innerHTML = 'Tacking Started';
+    } else {
+        bgGeo.stop();
+        document.getElementById('lblStatus').innerHTML = 'Tacking Stopped';
+        document.getElementById('lblLat').innerHTML = "";
+        document.getElementById('lblLon').innerHTML = "";
+    }
+}
