@@ -83,3 +83,10 @@ To develop with Apache Cordova on a Mac and deploy to iOS, you will need.
         ```text
         brew install ideviceinstaller ios-webkit-debug-proxy
         ```
+
+    * [CocoaPods](https://cocoapods.org/) is used by Apache Cordova behind the scenes for the dependency management in iOS projects build in Swift and Objective-C. While your code is build in HTML 5 and JavaScript, the plugins to access deveice capabilities use native languages. To install CocoaPod and then sync the repository execute:
+
+        ```text
+        sudo gem install cocoapods
+        pod setup
+        ```

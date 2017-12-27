@@ -9,6 +9,8 @@ CLI | Command Line Interface
 CORS | Cross-Origin Resource Sharing
 CSV | Comma Separated Value
 DDoS | Distributed Denial of Service
+GPS | Global Positioning System
+HTML | Hypertext Markup Language
 HTTP | Hypertext Transfer Protocol
 IAM	| Identity and Access Management
 IDE | Integrated Development Environment
