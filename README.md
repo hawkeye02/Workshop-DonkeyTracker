@@ -44,7 +44,7 @@ As mentioned above you will develop this mobile application using Apache Cardova
 * send the data to your API Gateway, so that you can trigger the Lambda function and put it to the DynamoDB table
 * and do so even if it runs in the background.
 
-As mentioned in the **requirements**, your machine should be prepared for the development in Apache Cordova and if you build on a Mac and deploy to iOS you will find more details on how to set up the machine in [appendix 4](./Appendix-04). If you are ready to work with Apache Cordova, head over to [Step 4](./Step-04).
+As mentioned in the **requirements**, your machine should be prepared for the development of Apache Cordova applications and if you build on a Mac and deploy to iOS you will find more details on how to set up the machine in [appendix 4](./Appendix-04). If you are ready to work with Apache Cordova, head over to [Step 4](./Step-04).
 
 ## [Appendix 1: References](./Appendix-01)
 ## [Appendix 2: Acronyms](./Appendix-02)
