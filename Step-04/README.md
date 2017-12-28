@@ -271,7 +271,4 @@ Verify that the data has indeed been written to your DynamoDB table.
 
 ![06](./images/06.jpg)
 
-## Adding a Map
-
-[coming soon]
-
+And that's it for step 4. In the [next step](../Step-05) we take the mobile application one step further and add a map.

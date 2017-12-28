@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <meta http-equiv="Content-Security-Policy" 
+              content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; 
+                style-src * 'unsafe-inline'; 
+                script-src * 'unsafe-eval' 'unsafe-inline';
+                media-src *;
+                child-src blob: ;
+img-src data: blob: ;"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.css' rel='stylesheet' />
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>TrackingClient</title>
+    </head>
+    <body>
+        <div id='divMap'></div>
+
+        <!-- <div class="panelLeft">
+            <div id="panelElementsLeft" style="position:relative; top:20px; left:10px;">
+                <table>
+                    <tr>
+                        <td style="height:40px">Stationary Radius</td>
+                        <td>
+                            <input type="text" id="txtStationaryRadius" value="25" style="width:50px;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:40px">Distance Filter</td>
+                        <td>
+                            <input type="text" id="txtDistanceFilter" value="50" style="width:50px;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:40px">Desired Accuracy</td>
+                        <td>
+                            <input type="text" id="txtDesiredAccuracy" value="0" style="width:50px;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:40px">Max Locations</td>
+                        <td>
+                            <input type="text" id="txtMaxLocations" value="1000" style="width:50px;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:40px">Activity Type</td>
+                        <td style="height:40px">
+                            <select id="ddActivityType" style="width:63px;">
+                                <option value="AutomotiveNavigation">Automotive Navigation</option>
+                                <option value="OtherNavigation">Other Navigation</option>
+                                <option value="Fitness">Fitness</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:40px">Stop On Terminate</td>
+                        <td>
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch1" class="onoffswitch-checkbox" id="cbStopOnTerminate">
+                                <label class="onoffswitch-label" for="cbStopOnTerminate"></label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height:40px">
+                            <button type="button" id="btnCloseSettings" style="width:270px;height:35px">Save and Close</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div> -->
+        <div class="panelRight">
+            <div id="panelElementsRight" style="position:relative; top:20px; left:10px;">
+                <table>
+                    <tr>
+                        <td colspan="2" style="height:40px">
+                            <button type="button" id="btnSetMapStyleStreets" style="width:270px;height:35px">Streets</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height:40px">
+                            <button type="button" id="btnSetMapStyleOutdoors" style="width:270px;height:35px">Outdoors</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height:40px">
+                            <button type="button" id="btnSetMapStyleLight" style="width:270px;height:35px">Light</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height:40px">
+                            <button type="button" id="btnSetMapStyleDark" style="width:270px;height:35px">Dark</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height:40px">
+                            <button type="button" id="btnSetMapStyleSatellite" style="width:270px;height:35px">Satellite</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height:40px">
+                            <button type="button" id="btnSetMapStyleSatelliteStreets" style="width:270px;height:35px">Satellite with Streets</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:40px">Stay Awake</td>
+                        <td>
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch6" class="onoffswitch-checkbox" id="cbSleep">
+                                <label class="onoffswitch-label" for="cbSleep"></label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:40px">Keep Tracking</td>
+                        <td>
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch5" class="onoffswitch-checkbox" id="cbTracking">
+                                <label class="onoffswitch-label" for="cbTracking"></label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:40px">Show Tracks</td>
+                        <td>
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch7" class="onoffswitch-checkbox" id="cbShowTracks">
+                                <label class="onoffswitch-label" for="cbShowTracks"></label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height:40px">
+                            <button type="button" id="btnCloseMapStyles" style="width:270px;height:35px">Close</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- <button type="button" id="btnOpenSettings">Settings</button> -->
+        <button type="button" id="btnOpenMapStyles">Map</button>
+            
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.js'></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

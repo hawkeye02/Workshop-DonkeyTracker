@@ -1,0 +1,65 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run iOS on device",
+            "type": "cordova",
+            "request": "launch",
+            "platform": "ios",
+            "target": "device",
+            "port": 9220,
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}",
+            "ionicLiveReload": false,
+            "attachAttempts": 5,
+            "attachDelay": 10000
+        },
+        {
+            "name": "Attach to running iOS on device",
+            "type": "cordova",
+            "request": "attach",
+            "platform": "ios",
+            "target": "device",
+            "port": 9220,
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "name": "Run iOS on simulator",
+            "type": "cordova",
+            "request": "launch",
+            "platform": "ios",
+            "target": "iPhone-SE",
+            "port": 9220,
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}",
+            "ionicLiveReload": false,
+            "attachAttempts": 5,
+            "attachDelay": 10000
+        },
+        {
+            "name": "Attach to running iOS on simulator",
+            "type": "cordova",
+            "request": "attach",
+            "platform": "ios",
+            "target": "emulator",
+            "port": 9220,
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "name": "Simulate iOS in browser",
+            "type": "cordova",
+            "request": "launch",
+            "platform": "ios",
+            "target": "chrome",
+            "simulatePort": 8000,
+            "livereload": true,
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}"
+        }
+    ]
+}

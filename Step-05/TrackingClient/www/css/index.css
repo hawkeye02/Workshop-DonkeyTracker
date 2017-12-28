@@ -1,0 +1,99 @@
+body {
+    overflow: hidden !important;
+    width:100vw;
+    height:100vh;
+    font-family: Calibri, sans-serif;
+}
+
+#divMap{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}
+
+.panelLeft {
+    z-index:2000;
+    width:300px;
+    margin-left:-300px; 
+    height:100%; 
+    background:white;
+    position:absolute; 
+    left:0px;
+    top:0px;
+}
+
+.panelRight {
+    z-index:2000;
+    width:300px;
+    margin-right:-300px; 
+    height:100%; 
+    background:white;
+    position:absolute; 
+    right:0px;
+    top:0px;
+}
+
+#btnOpenSettings {
+    z-index:1000;
+    position:absolute;
+    left:10px;
+    top:20px;
+    width:65px;
+}
+
+#btnOpenMapStyles {
+    z-index:1000;
+    position:absolute;
+    right:10px;
+    top:20px;
+    width:65px;
+}
+
+.onoffswitch {
+    position: relative; width: 55px;
+    -webkit-user-select:none; 
+    -moz-user-select:none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 20px; padding: 0; line-height: 20px;
+    border: 0px solid #FFFFFF; border-radius: 30px;
+    background-color: #9E9E9E;
+}
+
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 30px; margin: -5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 31px;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px 0px #757575;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #42A5F5;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    border-color: #42A5F5;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+    background-color: #2196F3; 
+    box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.2);
+}

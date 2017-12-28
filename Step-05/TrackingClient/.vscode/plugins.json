@@ -1,0 +1,1 @@
+{"plugins":["cordova-plugin-whitelist","cordova-background-geolocation-lt","cordova-plugin-background-fetch","cordova-plugin-cocoalumberjack","cordova-plugin-device","cordova-plugin-mapbox","cordova-plugin-insomnia"]}

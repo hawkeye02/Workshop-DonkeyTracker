@@ -13,6 +13,7 @@ Workshop to build an end-to-end serverless tracking application for your mobile 
     * [Cordova Tools](https://marketplace.visualstudio.com/items?itemName=vsmobile.cordova-tools) for the mobile application development
 * [Postman](https://www.getpostman.com/) or a similar tool to craft and test HTTP POST requests.
 * The mobile application is develped in [Apache Cordova](https://cordova.apache.org), a framework for the development of cross-platform, hybrid applications that translates HTML5 and JavaScript to native code. While you write the code only once and can deploy anywhere, the requirements for the development environment will vary depending on our development machine and the playtforms you develop for. If you build on a Mac and deploy to iOS you will find more details on how to set up the machine in [appendix 4](./Appendix-04). For other development machines and platforms check out the Apache Cordova [Get Started](https://cordova.apache.org/#getstarted) and the [platform specific guides](https://cordova.apache.org/docs/en/latest/index.html#develop-for-platforms).
+* A [Mapbox](https://www.mapbox.com) account for the mapping part.
 
 ## Step 1: Persisting Data in DynamoDB Table
 
@@ -46,7 +47,12 @@ As mentioned above you will develop this mobile application using Apache Cardova
 
 As mentioned in the **requirements**, your machine should be prepared for the development of Apache Cordova applications and if you build on a Mac and deploy to iOS you will find more details on how to set up the machine in [appendix 4](./Appendix-04). If you are ready to work with Apache Cordova, head over to [Step 4](./Step-04).
 
+## Step 5: Adding a Map to the Mobile Device Application
+
+There are several good mapping services you can choose from when adding an interactive map to an Apache Cordova application: [Mapbox](https://www.mapbox.com/mapbox-gl-js/api/), [Bing Maps](https://www.bing.com/api/maps/sdkrelease/mapcontrol/isdk#overview), [Google Maps](https://developers.google.com/maps/documentation/javascript/), [HERE](https://developer.here.com/) or [TomTom](https://developer.tomtom.com/tomtom-maps-apis-developers) to name a few. Of course you can also use open data such as [OpenStreetMap](https://switch2osm.org/) to run your own mapping services. In fact, if you only want to serve maps as we do in this workshop it isn't all that difficult and may in fact be more cost efficient than a 3rd party mapping services. Maybe we look at this in an optional step later on. For now we will work with Mapbox, a great service from a great company with lots of open source projects here on GitHub that has done some phenomenal work leveraging and contributing to OpenStreetMap and other related open source and open data projects. Head over to [Step 5](./Step-05) to integrate Mapbox into your Cordova application.
+
 ## [Appendix 1: References](./Appendix-01)
 ## [Appendix 2: Acronyms](./Appendix-02)
 ## [Appendix 3: Initial Identity and Access Management for a New Account](./Appendix-03)
 ## [Appendix 4: Preparing your Mac for Apache Cordova Development](./Appendix-04)
+## [Appendix 5: Troubleshooting](./Appendix-05)
