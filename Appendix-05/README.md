@@ -1,4 +1,4 @@
-# Troubleshooting
+# Appendix 5: Troubleshooting
 
 ## 'Unable to mount developer disk image' when trying to debug from Visual Studio Code on a physical device
 
