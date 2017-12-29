@@ -5,8 +5,10 @@ Abbreviation | Explanation
 API | Application Programming Interface
 ARN | Amazon Resource Name
 AWS | Amazon Web Services
+CDN | Content Delivery Network
 CLI | Command Line Interface
 CORS | Cross-Origin Resource Sharing
+CSS | Cascading Style Sheet
 CSV | Comma Separated Value
 DDoS | Distributed Denial of Service
 GPS | Global Positioning System

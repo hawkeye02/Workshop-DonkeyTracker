@@ -12,8 +12,6 @@ var app = {
     // deviceready Event Handler
     onDeviceReady: function () {
         // UI Components
-        // $('#btnOpenSettings').click(openSettings);
-        // $('#btnCloseSettings').click(closeSettings);
         $('#btnOpenMapStyles').click(openMapStyles);
         $('#btnCloseMapStyles').click(closeMapStyles);
         $('#btnSetMapStyleStreets').click(setMapStyleStreets);
@@ -27,7 +25,7 @@ var app = {
         $('#cbShowTracks').click(toggleShowTracks); 
 
         // The Map
-        mapboxgl.accessToken = 'YOUR MAPBOX KEY';
+        mapboxgl.accessToken = '[YOUR MAPBOX KEY]';
         map = new mapboxgl.Map({
             container: 'divMap',
             style: 'mapbox://styles/mapbox/dark-v9',
@@ -150,15 +148,6 @@ var app = {
 };
 
 app.initialize();
-
-//UX
-// function openSettings() {
-//     $(".panelLeft").animate({ "margin-left": "0px" }, 500);
-// };
-
-// function closeSettings() {
-//     $(".panelLeft").animate({ "margin-left": "-300px" }, 500);
-// };
 
 function openMapStyles() {
     $(".panelRight").animate({ "margin-right": "0px" }, 500);
