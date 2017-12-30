@@ -5,6 +5,8 @@
 * [AWS Free Tier](https://aws.amazon.com/free/)
 * [AWS Region Table](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/)
 * [DynamoDB](https://aws.amazon.com/dynamodb/)
+* [S3](https://aws.amazon.com/s3/)
+* [Cognito](https://aws.amazon.com/cognito/)
 * [Installing the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/installing.html)
 * [Homebrew](https://brew.sh/)
 * [Visual Studio Code](https://code.visualstudio.com/)
@@ -16,3 +18,4 @@
 * [Mapbox](https://www.mapbox.com)
 * [Insomnia](https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin)
 * [jQuery](https://jquery.com/)
+* [JWT](https://jwt.io/)

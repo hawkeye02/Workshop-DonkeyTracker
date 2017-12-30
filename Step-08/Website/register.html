@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Register</h1>
+
+<input type="email" id="txtEmail" placeholder="Email" required>
+<input type="password" id="txtPassword" placeholder="Password" pattern=".*" required>
+
+<input type="submit" value="Register" onclick="registerUser();">
+
+<script src="/js/aws-cognito-sdk.min.js"></script>
+<script src="/js/amazon-cognito-identity.min.js"></script>
+<script src="/js/config.js"></script>
+<script src="/js/register.js"></script>
+</body>
+</html>

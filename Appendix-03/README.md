@@ -95,11 +95,11 @@ Scen the QR Code in your virtual MFA device and enter 2 subsequent authenticatio
 
 ![23](./images/23.jpg)
 
-Back in the screen for the configuration of security credentials for your IAM users scroll down and click on create **Create access key**. Thi is the key you will require for CLI and SDK access to your AWS account.
+Back in the screen for the configuration of security credentials for your IAM users scroll down and click on create **Create access key**. This is the key you will require for CLI and SDK access to your AWS account.
 
 ![24](./images/24.jpg)
 
-This is the only time you will see the **secret access key** in the concole. You can delete it and create a new one but once yu leave this screen you can never again retrieve the key from the console. So, copy the secret access key and store it somewhere save or simply download the credentials as .csv file. 
+This is the only time you will see the **secret access key** in the concole. You can delete it and create a new one but once you leave this screen you can never again retrieve the key from the console. So, copy the secret access key and store it somewhere save or simply download the credentials as .csv file. 
 
 ![25](./images/25.jpg)
 

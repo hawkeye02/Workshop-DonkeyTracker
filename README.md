@@ -1,7 +1,7 @@
 # WORK IN PROGRESS (DonkeyTracker Workshop)
 Workshop to build an end-to-end serverless tracking application for your mobile device including a serverless backend powered by Amazon Web Services (AWS). 
 
-**Serveless computing** allows you to focus entirely on your application rather than managing servers and scaling the environment. Often it is also more cost efficient since you avoid overprisioning and have just the right capacity. Therefore this workshop is build around technologies such as DynamoDB, Lambda, API Gateway and Simple Storage Service (S3).
+**Serveless computing** allows you to focus entirely on your application rather than managing servers and scaling the environment. Often it is also more cost efficient since you avoid overprisioning and have just the right capacity. Therefore this workshop is build around technologies such as DynamoDB, Lambda, API Gateway, Simple Storage Service (S3) and Cognito.
 
 ## Requirements
 
@@ -19,39 +19,71 @@ Workshop to build an end-to-end serverless tracking application for your mobile 
 
 AWS provides many options to store and query data. For the type of data that we want to store in our tracking application, a database is probably most appropriate and AWS provides severeal managed and unmanaged services. While the recently announced [Amazon Aurora Serverless](https://aws.amazon.com/blogs/aws/in-the-works-amazon-aurora-serverless/) might be an option in the future we'll pick for now the already proven NoSQL database [Amazon DynamoDB](https://aws.amazon.com/dynamodb/). 
 
-Head over to [Step 1](./Step-01) to dive right in.
+Head over to [step 1](./Step-01) to dive right in.
 
 ## Step 2: Writing Data to DynamoDB Table with Lambda
 
-[AWS Lambda](https://aws.amazon.com/lambda/) lets you run code without provisioning or managing servers. You pay only for the compute time you consume - there is no charge when your code is not running. 
+[AWS Lambda](https://aws.amazon.com/lambda/) lets you run code without provisioning or managing servers. You pay only for the compute time you consume - there is no charge when your code is not running. Lambda truely simplifies the development as long as your code meets the requirements, i.e. if you're developing APIs that don't require more than 5 min of execution time or 3 GB of memory it is pefect to get started quickly, avoid the management of servers and save cost. It is outside the scope of this workshop but for more complex scenarios where you may want to orchestrate multiple Lambda functions, have a look at [AWS Step Functions](https://aws.amazon.com/step-functions).
 
-Lambda truely simplifies the development as long as your code meets the requirements, i.e. if you're developing APIs that don't require more than 5 min of execution time or 3 GB of memory it is pefect to get started quickly, avoid the management of servers and save cost.
-
-It is outside the scope of this workshop but for more complex scenarios where you may want to orchestrate multiple Lambda functions, have a look at [AWS Step Functions](https://aws.amazon.com/step-functions).
-
-For now head over to [Step 2](./Step-02) to create your Lambda function.
+For now head over to [step 2](./Step-02) to create your Lambda function.
 
 ## Step 3: Exposing your Lambda Function through the API Gateway
 
 [Amazon API Gateway](https://aws.amazon.com/api-gateway) is a service that enables developers to create, publish, maintain, monitor, and secure APIs at scale. You can create APIs that access AWS or other web services, as well as data stored in the AWS Cloud. Tere are several ways to athorize access to the API, including a simple API Key system with usage plans that allow you to throttle API requests. For this workshop you will take advantage of these usage plans to autorize access to the API.
 
-So, head over to [Step 3](./Step-03) to set up the API Gateway and create a method that triggers the Lambda function, you created in the pevious step.
+So, head over to [step 3](./Step-03) to set up the API Gateway and create a method that triggers the Lambda function, you created in the pevious step.
 
 ## Step 4: The Mobile Device Application
 
-As mentioned above you will develop this mobile application using Apache Cardova, a framework for building cross-platform, hybrid application that translates HTML 5 and JavaScript into native code to access certain device capacilities such as the GPS (or similar) chip that determines the location. This mobile application shall
+As mentioned above you will develop this mobile application using Apache [Cardova](https://cordova.apache.org), a framework for building cross-platform, hybrid application that translates HTML 5 and JavaScript into native code to access certain device capacilities such as the GPS (or similar) chip that determines the location. This mobile application shall
 
 * determine the device location, speed, heading, altitude and a few other things,
 * send the data to your API Gateway, so that you can trigger the Lambda function and put it to the DynamoDB table
 * and do so even if it runs in the background.
 
-As mentioned in the **requirements**, your machine should be prepared for the development of Apache Cordova applications and if you build on a Mac and deploy to iOS you will find more details on how to set up the machine in [appendix 4](./Appendix-04). If you are ready to work with Apache Cordova, head over to [Step 4](./Step-04).
+As mentioned in the **requirements**, your machine should be prepared for the development of Apache Cordova applications and if you build on a Mac and deploy to iOS you will find more details on how to set up the machine in [appendix 4](./Appendix-04). 
+
+If you are ready to work with Apache Cordova, head over to [step 4](./Step-04).
 
 ## Step 5: Adding a Map to the Mobile Device Application
 
-There are several good mapping services you can choose from when adding an interactive map to an Apache Cordova application: [Mapbox](https://www.mapbox.com/mapbox-gl-js/api/), [Bing Maps](https://www.bing.com/api/maps/sdkrelease/mapcontrol/isdk#overview), [Google Maps](https://developers.google.com/maps/documentation/javascript/), [HERE](https://developer.here.com/) or [TomTom](https://developer.tomtom.com/tomtom-maps-apis-developers) to name a few. Of course you can also use open data such as [OpenStreetMap](https://switch2osm.org/) to run your own mapping services. In fact, if you only want to serve maps as we do in this workshop, it isn't all that difficult and may in fact be more cost efficient than a 3rd party mapping services. Perhaps, we look at this in an optional step later on. For now you'll  work with Mapbox, a great service from a great company with lots of open source projects here on GitHub that has done some phenomenal work leveraging and contributing to OpenStreetMap and other related open source and open data projects. Head over to [Step 5](./Step-05) to integrate Mapbox into your Cordova application.
+There are several good mapping services you can choose from when adding an interactive map to an Apache Cordova application: [Mapbox](https://www.mapbox.com/mapbox-gl-js/api/), [Bing Maps](https://www.bing.com/api/maps/sdkrelease/mapcontrol/isdk#overview), [Google Maps](https://developers.google.com/maps/documentation/javascript/), [HERE](https://developer.here.com/) or [TomTom](https://developer.tomtom.com/tomtom-maps-apis-developers) to name a few. Of course you can also use open data such as [OpenStreetMap](https://switch2osm.org/) to run your own mapping services. In fact, if you only want to serve maps as we do in this workshop, it isn't all that difficult and may in fact be more cost efficient than a 3rd party mapping services. Perhaps, we look at this in an optional step later on. For now you'll  work with Mapbox, a great service from a great company with lots of open source projects here on GitHub that has done some phenomenal work leveraging and contributing to OpenStreetMap and other related open source and open data projects. 
 
-## Step 6: [COMING SOON]
+Head over to [step 5](./Step-05) to integrate Mapbox into your Cordova application.
+
+## Step 6: Website Hosting with S3
+
+[Amazon S3](https://aws.amazon.com/s3/) provides object storage with 11 9's of durability and can be easily configured to serve static websites. In the spirit of serverless application that's an ideal scenario for us. 
+
+Navigate to [step 6](./Step-06) to get started. 
+
+## Step 7: User Management with Cognito
+
+[Coming Soon]
+
+## Step 8: Adding Authentication and Authorization to your Website
+
+[Coming Soon]
+
+## Step 9: Connecting your Website to your API's
+
+[Coming Soon]
+
+## Step 10 (optional): Going to the Edge with CloudFront
+
+[Coming Soon]
+
+## Step 11 (optional): Set up a Domain
+
+[Coming Soon]
+
+## Step 12 (optional): Add SSL
+
+[Coming Soon]
+
+## Step 13 (optional): Setting up a CI/CD Pipeline
+
+[Coming Soon]
 
 ## [Appendix 1: References](./Appendix-01)
 ## [Appendix 2: Acronyms](./Appendix-02)

@@ -17,6 +17,7 @@ HTTP | Hypertext Transfer Protocol
 IAM	| Identity and Access Management
 IDE | Integrated Development Environment
 JSON | JavaScript Object Notation
+JWT | JSON Web Tokens
 KB | Kilobyte
 LTS | Long Term Support
 MFA	| Multi-Factor Authentication
