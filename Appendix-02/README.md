@@ -25,6 +25,7 @@ NPM | Node Package Manager
 NVM | Node Version Manager
 PIP | Pip Installs Packages
 QR Code	| Quick Response Code
+SAML | Security Assertion Markup Language
 RPS | Requests Per Second
 S3 | Simple Storage Service
 SDK | Software Development Kit

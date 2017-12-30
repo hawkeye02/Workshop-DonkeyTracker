@@ -59,7 +59,9 @@ Navigate to [step 6](./Step-06) to get started.
 
 ## Step 7: User Management with Cognito
 
-[Coming Soon]
+For the authentication and authorization of access to your website you will use [Amazon Cognito](https://aws.amazon.com/cognito/). Cognito scales to millions of users, and supports sign-in with social identity providers such as Facebook, Google, and Amazon as well as enterprise identity providers via SAML 2.0. For this workshop you will work with Cognito **User Pools** rather than federating with identity providers.
+
+Navigate to [step 7](./Step-07) to dive right in.
 
 ## Step 8: Adding Authentication and Authorization to your Website
 
