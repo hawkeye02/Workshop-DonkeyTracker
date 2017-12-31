@@ -8,7 +8,7 @@ There is **index.html** which will load when you navigate to the root of your we
 
 **register.html** uses the [Amazon Cognito Identity SDK for JavaScript](https://docs.aws.amazon.com/cognito/latest/developerguide/setting-up-the-javascript-sdk.html) to manage the sign-up of new users and it also loads a config.js script that holds the details of the Cognito User Pool and App ID. Here is the relevant part of the [config.js](./Website/js/config.js)
 
-```json
+```javascript
 window._config = {
     cognito: {
         userPoolId: '[YOUR_USER_POOL_ID]', 
