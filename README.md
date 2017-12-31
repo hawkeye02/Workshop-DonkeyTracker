@@ -65,7 +65,9 @@ Navigate to [step 7](./Step-07) to dive right in.
 
 ## Step 8: Adding Authentication and Authorization to your Website
 
-[Coming Soon]
+In the previous 2 steps you have created your website and configured a Cognito User Pool to manage authentication and authorization. It is now time to configure your website to make use of the user pool.
+
+Navigate to [step 8](./Step-08) to modify your website.
 
 ## Step 9: Connecting your Website to your API's
 

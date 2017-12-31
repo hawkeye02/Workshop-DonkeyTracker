@@ -1,16 +1,65 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>DonkeyTracker</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/img/favicon.ico"/>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.css' rel='stylesheet' />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" >
+    <link href='/css/index.css' rel='stylesheet' />
+</head>     
+
 <body>
+    <div id="divMap" class="divMap"></div>
+    
+    <nav nav class="navbar navbar-default" style="z-index:10000; opacity:1.0">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#divNavBar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">DonkeyTracker</a>
+            </div>
+        </div>
+    </nav>
+    <div id="divPanel" class="divPanel">
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <div class="btn-group btn-group-justified" role="group">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" onclick="alert('coming soon');">Get Tracks</button>
+                    </div>
+                </div>
+                <div class="btn-group btn-group-justified" role="group">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" onclick="signOut();">Sign out</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <div id="divPanelRight" class="divPanelRight">
+        <div class="panel panel-default">
+        <div class="panel-heading">Point Details</div>
+            <table id="tblPointDetails" class="table">
+            </table>
+        </div>
+    </div> 
 
-<h1>Tracker</h1>
-
-<div id="txtJWT">[JWT]</div>
-
-<input type="submit" value="Sign out" onclick="signOut();">
-
-<script src="/js/aws-cognito-sdk.min.js"></script>
-<script src="/js/amazon-cognito-identity.min.js"></script>
-<script src="/js/config.js"></script>
-<script src="/js/tracker.js"></script>
+    <!--Scripts for User Authentication -->
+    <script src="/js/aws-cognito-sdk.min.js"></script>
+    <script src="/js/amazon-cognito-identity.min.js"></script>
+    <script src="/js/config.js"></script>
+    <!--Scripts for UX -->
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!--Scripts for maps and website logic -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.js'></script>
+    <script src="/js/tracker.js"></script>
 </body>
 </html>

@@ -23,6 +23,7 @@ function registerUser(){
             alert(err);
         }
         cognitoUser = result.user;
-        alert('user ' + cognitoUser.getUsername() + ' registered');
+        console.log('user ' + cognitoUser.getUsername() + ' registered');
+        window.location.href = '/verify.html';
     });
 }

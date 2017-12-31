@@ -62,4 +62,6 @@ aws s3 sync s3://donkeytracker/website s3://YOUR_BUCKET_NAME --region YOUR_BUCKE
 
 Now navigate to your newly created website to make sure it loads correctly. Don't worry for now about the functionality such as sign-up and sign-in, you'll tackle this in the next steps. 
 
+![11](./images/11.jpg)
+
 If your website loads correctly you are ready to move on to [step 7](../Step-07).

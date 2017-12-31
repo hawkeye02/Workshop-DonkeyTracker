@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>DonkeyTracker</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/img/favicon.ico"/>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" >
+    <link href='/css/index.css' rel='stylesheet' />
+</head>   
+    
 <body>
+    <nav nav class="navbar navbar-default" style="z-index:10000; opacity:1.0">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#divNavBar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">DonkeyTracker</a>
+            </div>
+        </div>
+    </nav>
 
-<h1>Verify</h1>
+    <div class="panel panel-default" style="width:400px; margin: auto;">
+        <div class="panel-heading">Check your email for a verification code and verify user</div>
+        <div class="panel-body">
+            <div class="form-group row" >
+                <input type="text" id="txtEmail" class="form-control" placeholder="Email" style="width:380px; margin-left:10px; margin-right:10px">
+            </div>
+            <div class="form-group row">
+                <input type="text" id="txtVerify" class="form-control" placeholder="Verification Code" style="width:380px; margin-left:10px; margin-right:10px">
+            </div>
+            <div class="form-group row" >
+                <button type="button" class="btn btn-default" onclick="verifyUser();" style="width:380px; margin-left:10px; margin-right:10px">Verify</button>
+            </div>
+        </div>
+    </div>
 
-<input type="email" id="txtEmail" placeholder="Email" required>
-<input type="text" id="txtVerify" placeholder="Verification Code" required>
-
-<input type="submit" value="Verify" onclick="verifyUser();">
-
-<script src="/js/aws-cognito-sdk.min.js"></script>
-<script src="/js/amazon-cognito-identity.min.js"></script>
-<script src="/js/config.js"></script>
-<script src="/js/verify.js"></script>
+    <!--Scripts for User Authentication -->
+    <script src="/js/aws-cognito-sdk.min.js"></script>
+    <script src="/js/amazon-cognito-identity.min.js"></script>
+    <script src="/js/config.js"></script>
+    <!--Scripts for website logic -->
+    <script src="/js/verify.js"></script>
 </body>
 </html>

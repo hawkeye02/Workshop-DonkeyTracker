@@ -13,7 +13,8 @@ function verifyUser(){
             alert(err);
             return;
         }
-        alert('You are now confirmed and can log in.');
+        console.log('You are now confirmed and can log in.');
+        window.location.href = '/sign-in.html';
     });
 }
 
