@@ -1,11 +1,11 @@
 window._config = {
     cognito: {
-        userPoolId: 'us-west-2_Sex9Hbelr', 
-        userPoolAppClientId: '168ou4pq8o9gtcng6vktbom2a7', 
-        region: 'us-west-2'
+        userPoolId: 'YOUR_USER_POOL_ID', 
+        userPoolAppClientId: 'YOUR_APP_CLIENT_ID', 
+        region: 'YOUR_AWS_REGION'
     },
     mapbox: {
-        token: 'pk.eyJ1IjoiamtlYmVjayIsImEiOiJ6TE1NaDVrIn0.5Xyu6IPMwvbvyGpDNl11rQ'
+        token: 'YOUR_MAPBOX_TOKEN'
     },
     api: {
         invokeUrl: 'YOUR_INVOKE_URL'
