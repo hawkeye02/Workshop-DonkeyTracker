@@ -8,6 +8,7 @@ window._config = {
         token: 'YOUR_MAPBOX_TOKEN'
     },
     api: {
-        invokeUrl: 'YOUR_INVOKE_URL'
+        invokeUrl: 'YOUR_INVOKE_URL',
+        key: 'YOUR_API_KEY'
     }
 };

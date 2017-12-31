@@ -1,3 +1,3 @@
-# Step 12: Add SSL
+# Step 12: Set up a Domain
 
 [Coming Soon]

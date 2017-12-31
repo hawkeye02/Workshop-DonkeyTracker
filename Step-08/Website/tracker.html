@@ -29,9 +29,17 @@
     <div id="divPanel" class="divPanel">
         <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
+                <input type="text" id="txtUUID" class="form-control" placeholder="UUID">
+                <input type="text" id="txtDate" class="form-control" placeholder="Date in the form 2017-12-31">
+
                 <div class="btn-group btn-group-justified" role="group">
                     <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default" onclick="alert('coming soon');">Get Tracks</button>
+                        <button type="button" class="btn btn-default" onclick="GetTracks()">Get Tracks</button>
+                    </div>
+                </div>
+                <div class="btn-group btn-group-justified" role="group">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" onclick="ClearTracks()">Clear Tracks</button>
                     </div>
                 </div>
                 <div class="btn-group btn-group-justified" role="group">
@@ -43,13 +51,13 @@
         </form>
     </div>
     
-    <div id="divPanelRight" class="divPanelRight">
+    <!-- <div id="divPanelRight" class="divPanelRight">
         <div class="panel panel-default">
         <div class="panel-heading">Point Details</div>
             <table id="tblPointDetails" class="table">
             </table>
         </div>
-    </div> 
+    </div>  -->
 
     <!--Scripts for User Authentication -->
     <script src="/js/aws-cognito-sdk.min.js"></script>

@@ -69,23 +69,27 @@ In the previous 2 steps you have created your website and configured a Cognito U
 
 Navigate to [step 8](./Step-08) to modify your website.
 
-## Step 9: Connecting your Website to your API's
+## Step 9: Create an API for your Website
 
 [Coming Soon]
 
-## Step 10 (optional): Going to the Edge with CloudFront
+## Step 10: Connect your Website to your New API
 
 [Coming Soon]
 
-## Step 11 (optional): Set up a Domain
+## Step 11 (optional): Going to the Edge with CloudFront
 
 [Coming Soon]
 
-## Step 12 (optional): Add SSL
+## Step 12 (optional): Set up a Domain
 
 [Coming Soon]
 
-## Step 13 (optional): Setting up a CI/CD Pipeline
+## Step 13 (optional): Add SSL
+
+[Coming Soon]
+
+## Step 14 (optional): Setting up a CI/CD Pipeline
 
 [Coming Soon]
 

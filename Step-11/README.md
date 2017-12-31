@@ -1,3 +1,3 @@
-# Step 11: Set up a Domain
+# Step 11: Going to the Edge with CloudFront
 
 [Coming Soon]
