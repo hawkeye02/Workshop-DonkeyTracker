@@ -85,11 +85,15 @@ Navigate to [step 8](./Step-08) to modify your website.
 
 [Coming Soon]
 
-## Step 13 (optional): Add SSL
+## Step 13 (optional): WWW Domain Redirect
 
 [Coming Soon]
 
-## Step 14 (optional): Setting up a CI/CD Pipeline
+## Step 14 (optional): Add SSL Support
+
+[Coming Soon]
+
+## Step 15 (optional): Setting up a CI/CD Pipeline
 
 [Coming Soon]
 

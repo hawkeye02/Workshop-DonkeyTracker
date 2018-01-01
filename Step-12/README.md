@@ -1,3 +1,3 @@
-# Step 12: Set up a Domain
+# Step 12 (optional): Set up a Domain
 
 [Coming Soon]

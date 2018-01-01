@@ -1,3 +1,3 @@
-# Step 13: Add SSL
+# Step 13 (optional): WWW Domain Redirect
 
 [Coming Soon]
