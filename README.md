@@ -79,7 +79,7 @@ Head over to [step 9](./Step-09) to dive right in.
 
 ## Step 10: Connect your Website to your New API
 
-[Coming Soon]
+The code for your website is already prepared to call your newly created API but you still need to make a modification to config.js to provide the Invoke URL for your API Gateway and a key. In [step 10](./Step-10) you will make this final change.
 
 ## Step 11 (optional): Going to the Edge with CloudFront
 
