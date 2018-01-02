@@ -1,7 +1,7 @@
 # WORK IN PROGRESS (DonkeyTracker Workshop)
-Workshop to build an end-to-end serverless tracking application for your mobile devices including a serverless backend powered by Amazon Web Services (AWS). 
+In this self-guided workshop you will build an end-to-end serverless tracking application for your mobile devices powered by Amazon Web Services (AWS). 
 
-**Serveless computing** allows you to focus entirely on your application rather than managing servers and scaling the environment. Often it is also more cost efficient since you avoid overprisioning and have just the right capacity. Therefore this workshop is build around technologies such as DynamoDB, Lambda, API Gateway, Simple Storage Service (S3), CloudFront, Route 53 and Cognito.
+The beauty of **serveless computing** is, that it allows you to focus entirely on your application rather than managing servers and scaling the environment. It is often also more cost efficient since you avoid overprovisioning and always have just the right capacity. This workshop is build around technologies such as DynamoDB, Lambda, API Gateway, Simple Storage Service (S3), CloudFront, Route 53 and Cognito.
 
 ![01](./images/Architecture-Diagram.jpg)
 
@@ -73,7 +73,9 @@ Navigate to [step 8](./Step-08) to modify your website.
 
 ## Step 9: Create an API for your Website
 
-[Coming Soon]
+With the structure and user management for your website in place, the final piece is to create an API that retrieves data from your DynamoDB table and displays it on the map. Creating the API is very similar to what you have already done in step 2 and 3. Therefore we'll go through this a bit quicker.
+
+Head over to [step 9](./Step-09) to dive right in. 
 
 ## Step 10: Connect your Website to your New API
 
