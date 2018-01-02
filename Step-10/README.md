@@ -27,4 +27,4 @@ Enter a valid UUID, i.e. one that you have in the DynamoDB table from previous t
 
 ![02](./images/02.jpg)
 
-You have now an end-to-end serverless application with a mobile application, a website user management and a couple of APIs in place. The next steps are optional but advisable for real-world applications and include taking advantage of a content delivery network, registering your own custom domain and securing the data in transit through SSL. Do you want to go the extra steps? Great, head over to [step 11](./Step-11) to bring your website to the edge with **CloudFront**.
+You have now an end-to-end serverless application with a mobile application, a website user management and a couple of APIs in place. The next steps are optional but advisable for real-world applications and include taking advantage of a content delivery network, registering your own custom domain and securing the data in transit through SSL. Do you want to go the extra steps? Great, head over to [step 11](../Step-11) to bring your website to the edge with **CloudFront**.
