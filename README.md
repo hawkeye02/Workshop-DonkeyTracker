@@ -97,7 +97,7 @@ We won't cover region failover and different types of routing in this workshop b
 
 ## Step 13 (optional): WWW Domain Redirect
 
-[Coming Soon]
+To some extend it is a matter of taste if you have a domain with or without the prefix **www** - or both. If you want to have them both, head over to [step 13](./Step-13) next.
 
 ## Step 14 (optional): Adding SSL Support
 
