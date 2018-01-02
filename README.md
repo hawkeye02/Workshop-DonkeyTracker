@@ -83,7 +83,11 @@ The code for your website is already prepared to call your newly created API but
 
 ## Step 11 (optional): Going to the Edge with CloudFront
 
-[Coming Soon]
+Amazon [CloudFront](https://aws.amazon.com/cloudfront/) is a content delivery network (CDN) that delivers data, applications and APIs to end users worldwide with low latency and high transfer speeds. CloudFront is integrated with AWS infrastructure and services and takes advantage of [AWS Shield](https://aws.amazon.com/shield/) for DDoS mitigation. The latter is quite relevant not just to keep your website available but also to prevent excessive cost that such a DDoS attack could cause.
+
+> Note: The API Gateway is by default already integrated with CloudFront.
+
+Head over to [step 11](./Step-11) to provide a global presence, faster response times and DDoS protection to your website.
 
 ## Step 12 (optional): Set up a Domain
 

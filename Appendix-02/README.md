@@ -26,6 +26,7 @@ NVM | Node Version Manager
 PIP | Pip Installs Packages
 QR Code	| Quick Response Code
 SAML | Security Assertion Markup Language
+REST| REpresentational State Transfer
 RPS | Requests Per Second
 S3 | Simple Storage Service
 SDK | Software Development Kit
