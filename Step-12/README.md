@@ -104,4 +104,4 @@ With the 2 records in place open a new browser tab...
 
 ![26](./images/26.jpg)
 
-At present, you can reach your website under the naked domain name that you registered but it will fail with the prefix **www**. To some extend it is a matter of taste if you have a domain with or without the prefix **www** - or both. If you want to have them both, head over to [step 13](../Step13) next.
+At present, you can reach your website under the naked domain name that you registered but it will fail with the prefix **www**. To some extend it is a matter of taste if you have a domain with or without the prefix **www** - or both. If you want to have them both, head over to [step 13](../Step-13) next.
