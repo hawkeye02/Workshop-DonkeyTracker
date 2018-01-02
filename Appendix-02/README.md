@@ -11,11 +11,13 @@ CORS | Cross-Origin Resource Sharing
 CSS | Cascading Style Sheet
 CSV | Comma Separated Value
 DDoS | Distributed Denial of Service
+DNS | Domain Name System
 GPS | Global Positioning System
 HTML | Hypertext Markup Language
 HTTP | Hypertext Transfer Protocol
 IAM	| Identity and Access Management
 IDE | Integrated Development Environment
+IP | Internet Protocol
 JSON | JavaScript Object Notation
 JWT | JSON Web Tokens
 KB | Kilobyte

@@ -91,7 +91,9 @@ Head over to [step 11](./Step-11) to provide a global presence, faster response 
 
 ## Step 12 (optional): Set up a Domain
 
-[Coming Soon]
+Amazon [Route 53](https://aws.amazon.com/route53/) is a highly available and scalable Domain Name System (DNS). Aside from registering domains and resolving domain names to IP v4 and v6 addresses inside and outside of AWS, it can also be used to perform health checks, fail-over between entire regions or provide different types of routing such as latency-, weighted- round robin or geographic proximity-based routing.
+
+We won't cover region failover and different types of routing in this workshop but head over to [step 12](./Step-12) to register your domain and point it to your CloudFront distribution.
 
 ## Step 13 (optional): WWW Domain Redirect
 

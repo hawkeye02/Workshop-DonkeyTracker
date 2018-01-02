@@ -9,6 +9,7 @@
 * [Cognito](https://aws.amazon.com/cognito/)
 * [Amazon Cognito Identity SDK for JavaScript](https://docs.aws.amazon.com/cognito/latest/developerguide/setting-up-the-javascript-sdk.html)
 * [CloudFront](https://aws.amazon.com/cloudfront/) 
+* [Route 53](https://aws.amazon.com/route53/) 
 * [Installing the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/installing.html)
 * [Homebrew](https://brew.sh/)
 * [Visual Studio Code](https://code.visualstudio.com/)
