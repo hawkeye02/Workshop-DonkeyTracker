@@ -1,6 +1,6 @@
 # Step 10: Connecting your Website to your New API
 
-The code for your website is already prepared to call your newly created API (to review the code click [here](.Step-08/Website/j/tracker.js)) but you still need to make a modification to config.js to provide the Invoke URL for your API Gateway and a key. To do so, navigate to the **S3 Console** and to the folder **js** in the bucket you use for your website. Download the file **config.js** and replace **YOUR_INVOKE_URL** and **YOUR_API_KEY** with the correct values for your environment. The other placeholders should already have been replaced in prior steps.
+The code for your website is already prepared to call your newly created API (to review the code click [here](../Step-08/Website/j/tracker.js)) but you still need to make a modification to config.js to provide the Invoke URL for your API Gateway and a key. To do so, navigate to the **S3 Console** and to the folder **js** in the bucket you use for your website. Download the file **config.js** and replace **YOUR_INVOKE_URL** and **YOUR_API_KEY** with the correct values for your environment. The other placeholders should already have been replaced in prior steps.
 
 ```javascript
 window._config = {
