@@ -1,7 +1,9 @@
 # WORK IN PROGRESS (DonkeyTracker Workshop)
-Workshop to build an end-to-end serverless tracking application for your mobile device including a serverless backend powered by Amazon Web Services (AWS). 
+Workshop to build an end-to-end serverless tracking application for your mobile devices including a serverless backend powered by Amazon Web Services (AWS). 
 
-**Serveless computing** allows you to focus entirely on your application rather than managing servers and scaling the environment. Often it is also more cost efficient since you avoid overprisioning and have just the right capacity. Therefore this workshop is build around technologies such as DynamoDB, Lambda, API Gateway, Simple Storage Service (S3) and Cognito.
+**Serveless computing** allows you to focus entirely on your application rather than managing servers and scaling the environment. Often it is also more cost efficient since you avoid overprisioning and have just the right capacity. Therefore this workshop is build around technologies such as DynamoDB, Lambda, API Gateway, Simple Storage Service (S3), CloudFront, Route 53 and Cognito.
+
+![01](./images/Architecture-Diagram.jpg)
 
 ## Requirements
 
