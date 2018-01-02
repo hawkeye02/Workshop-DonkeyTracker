@@ -89,7 +89,7 @@ Navigate to [step 8](./Step-08) to modify your website.
 
 [Coming Soon]
 
-## Step 14 (optional): Add SSL Support
+## Step 14 (optional): Adding SSL Support
 
 [Coming Soon]
 
