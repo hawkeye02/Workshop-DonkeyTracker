@@ -102,7 +102,7 @@ To some extend it is a matter of taste if you have a domain with or without the 
 
 ## Step 14 (optional): Adding SSL Support
 
-Sending sensitive data such as your user ID or a password over the open internet is a recipe for disaster. In this final step you will create a SSL/TLS certificate using the AWS [Certificate Manager](https://aws.amazon.com/certificate-manager/) to secure your website.
+Sending sensitive data such as your user ID or a password over the open internet is a recipe for disaster. In this final [step](./Step-14) you will create a SSL/TLS certificate using the AWS [Certificate Manager](https://aws.amazon.com/certificate-manager/) to secure your website.
 
 ## Step 15 (optional): Setting up a CI/CD Pipeline
 
