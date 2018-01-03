@@ -34,6 +34,7 @@ S3 | Simple Storage Service
 SDK | Software Development Kit
 SQL | Standard Query Language
 SSL | Secure Socket Layer
+TLS | Transport Layer Security
 TOTP | Time-Based One-Time Password Algorithm
 URL | Uniform Resource Locator
 UUID | Unique User ID
