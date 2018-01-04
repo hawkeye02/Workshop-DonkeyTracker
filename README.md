@@ -38,7 +38,7 @@ So, head over to [step 3](./Step-03) to set up the API Gateway and create a meth
 
 ## Step 4: The Mobile Device Application
 
-As mentioned above, you will develop this mobile application using Apache [Cardova](https://cordova.apache.org), a framework for building cross-platform, hybrid application that translates HTML 5 and JavaScript into native code to access certain device capacilities such as the GPS (or similar) chip that determines the location. This mobile application shall
+As mentioned above, you will develop this mobile application using Apache [Cordova](https://cordova.apache.org), a framework for building cross-platform, hybrid application that translates HTML 5 and JavaScript into native code to access certain device capacilities such as the GPS (or similar) chip that determines the location. This mobile application shall
 
 * determine the device location, speed, heading, altitude and a few other things,
 * send the data to your API Gateway, so that you can trigger the Lambda function and put it to the DynamoDB table
